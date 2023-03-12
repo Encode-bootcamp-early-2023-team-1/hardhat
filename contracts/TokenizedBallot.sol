@@ -54,6 +54,6 @@ contract TokenizedBallot {
     }
 
     function winnerName() external view returns (bytes32 winnerName_) {
-        winnerName_ = proposals[winningProposal()].name;
+        return proposals[winningProposal()].name;
     }
 }
